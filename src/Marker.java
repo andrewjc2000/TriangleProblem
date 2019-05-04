@@ -1,6 +1,14 @@
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * Marker class
+ * Represents a place on the peg board, which has a particular state
+ * and "ID", which is essentially its data/location in the graph.
+ *
+ * @author Andrew Chafos
+ * @version 1.o
+ */
 public class Marker {
     public final int ID;
     private State state;

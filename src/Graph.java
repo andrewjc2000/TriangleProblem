@@ -5,10 +5,12 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.HashSet;
 /**
- * A class representing a directed graph, with a vertex set, edge set, and
- * an adjacency list.
+ * Class representing a graph.
  *
- * DO NOT EDIT THIS CLASS!!!
+ * Credit for this class file goes to Georgia Tech CS 1332 Course,
+ * obtained in conjunction with a released homework.
+ *
+ * I re-used this file from the course out of convenience.
  *
  * @author CS 1332 TAs
  * @version 1.0

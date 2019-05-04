@@ -1,12 +1,14 @@
 /**
- * Class representing a directed edge from u to v.
+ * Class representing an edge.
  *
- * DO NOT EDIT THIS CLASS!!
+ * Credit for this class file goes to Georgia Tech CS 1332 Course,
+ * obtained in conjunction with a released homework.
+ *
+ * I re-used this file from the course out of convenience.
  *
  * @author CS 1332 TAs
  * @version 1.0
  */
-
 public class Edge<T> implements Comparable<Edge<? super T>> {
 
     private Vertex<T> u;

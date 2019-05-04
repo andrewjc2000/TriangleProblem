@@ -1,5 +1,10 @@
 import java.util.*;
 
+/**
+ * Contains the Main execution of the program
+ * @author Andrew Chafos
+ * @version 1.0
+ */
 public class TriangleProblem {
 
     private static int ITERATIONS = 0;
@@ -12,7 +17,7 @@ public class TriangleProblem {
         makeMoves(graph, new LinkedList<>());
         System.out.println(solutions.size());
         System.out.println(ITERATIONS);
-        //printSolutions();
+        printSolutions();
     }
 
     private static Graph<Marker> triangleGraph() {
@@ -61,16 +66,17 @@ public class TriangleProblem {
     }
 
     private static void printSolutions() {
-        for (List<Move> runningSolution: solutions) {
-            System.out.println(runningSolution.size());
-            System.out.println(Arrays.toString(runningSolution.toArray()));
-            Graph<Marker> freshGraph = triangleGraph();
-            for (Move move : runningSolution) {
-                printGraph(freshGraph);
-                doMove(freshGraph, move);
-            }
+        //for (List<Move> runningSolution: solutions) {
+        List<Move> runningSolution = solutions.get(0);
+        System.out.println(runningSolution.size());
+        System.out.println(Arrays.toString(runningSolution.toArray()));
+        Graph<Marker> freshGraph = triangleGraph();
+        for (Move move : runningSolution) {
             printGraph(freshGraph);
+            doMove(freshGraph, move);
         }
+        printGraph(freshGraph);
+        //}
     }
 
     private static List<Move> getValidMoves(Graph<Marker> graph) {

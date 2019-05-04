@@ -1,8 +1,10 @@
 /**
- * Class to store a vertex in a graph and an integer associated with it
- * representing the distance to this vertex from some other vertex
+ * Class representing a "vertex distance"; a vertex with an associated distance/weight.
  *
- * DO NOT EDIT THIS CLASS!!!
+ * Credit for this class file goes to Georgia Tech CS 1332 Course,
+ * obtained in conjunction with a released homework.
+ *
+ * I re-used this file from the course out of convenience.
  *
  * @author CS 1332 TAs
  * @version 1.0

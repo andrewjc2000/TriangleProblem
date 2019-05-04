@@ -1,3 +1,11 @@
+/**
+ * Move class
+ * Represents a move on the peg board, with a starting, middle, and ending
+ * node, each represented by the ID of that particular node.
+ *
+ * @author Andrew Chafos
+ * @version 1.o
+ */
 public class Move {
     public final int start, middle, end;
     public Move(int start, int middle, int end) {
